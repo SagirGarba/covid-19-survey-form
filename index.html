@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Corona Survey Form</title>
+</head>
+<body>
+  <!-- Heading -->
+    <h1 id="title">COVID 19 Survey Form</h1>
+
+      <div>
+        <h4 class="text-center text-info">Coded By <a href="https://twitter.com/Sager_Garba" target="_blank" class="text-decoration-none">Sagir Garba</a></h4>
+      </div>
+
+<!--Descriptive text-->
+    <p id="description">Thank you for taking the time complete this survey form. We'll let you know through email.</p>
+    <div class="body">
+      <div class="left-bar"></div>
+
+
+      <!-- Form -->
+        <div class="content"><form id="survey-form">
+
+          <!--Personal information-->
+        <div class="g-form"><label id="name-label" for="name">Name</label>
+        <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-style"
+            placeholder="Enter your name" required/>
+          </div>
+
+        <div class="g-form"><label id="email-label" for="name">Email</label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-style"
+            placeholder="Enter your email" required/>
+          </div>
+
+        <div class="g-form"><label id="number-label" for="number">Age</label>
+        <input
+            type="number"
+            name="age"
+            id="number"
+            min="0"
+            max="110"
+            class="form-control"
+            placeholder="Enter your Age" required/>
+          </div>
+
+        <div class="g-form"><label id="dropdown" for="birth-date">Date of Birth</label>
+          <div class="formrow">
+          <select id="dropdown" name="month" class="form-control" placeholder="Month" required>
+          <option disabled selected value>-Please choose below-</option>
+          <option value="january">January</option>
+          <option value="february">February</option>
+          <option value="march">March</option>
+          <option value="april">April</option>
+          <option value="may">May</option>
+          <option value="june">June</option>
+          <option value="july">July</option>
+          <option value="august">August</option>
+          <option value="september">September</option>
+          <option value="october">October</option>
+          <option value="november">November</option>
+          <option value="december">December</option>
+        </select>
+        
+        <input
+            type="number"
+            name="day"
+            id="day"
+            min="1"
+            max="31"
+            class="form-control"
+            placeholder="Day" required/>
+
+        <input
+            type="number"
+            name="year"
+            id="year"
+            min="1880"
+            max="2015"
+            class="form-control"
+            placeholder="Year" required/></div>
+          </div>
+        
+
+          <!--Activities Information-->
+        <div class="special"><div class="g-form"><p>Do you experience any of the following symptoms? If so, please check and/or specify.</p>
+
+          <label for="fever"><input
+            type="checkbox"
+            value="cold"
+            name="symptoms"
+            class="input-symptoms"/>Fever</label>
+
+          <label for="cold"><input
+            type="checkbox"
+            value="fever"
+            name="symptoms"
+            class="input-symptoms"/>Cold</label>
+
+          <label for="cough"><input
+            type="checkbox"
+            value="cough"
+            name="symptoms"
+            class="input-symptoms"/>Cough</label>
+
+          <label for="headache"><input
+            type="checkbox"
+            value="headache"
+            name="symptoms"
+            class="input-symptoms"/>Headache</label>
+
+          <label for="sore-throat"><input
+            type="checkbox"
+            value="sore-throat"
+            name="symptoms"
+            class="input-symptoms"/>Sore throat</label>
+
+          <label for="diarrhea"><input
+            type="checkbox"
+            value="diarrhea"
+            name="symptoms"
+            class="input-symptoms"/>Diarrhea</label>
+
+          <label for="hallucination"><input
+            type="checkbox"
+            value="hallucination"
+            name="symptoms"
+            class="input-symptoms"/>Hallucination</label>
+
+          <label for="dizziness"><input
+            type="checkbox"
+            value="dizziness"
+            name="symptoms"
+            class="input-symptoms"/>Dizziness</label>
+            
+
+          <label for="aches"><input
+            type="checkbox"
+            value="aches"
+            name="symptoms"
+            class="input-symptoms"/>Aches</label>
+          <div>
+                <label for="others" class="input-symptoms">
+                  Please specify:<input
+                type="text"
+                placeholder="Other symptoms"
+                class="input-symptoms"/>
+              </label>
+            </div>
+          </div>
+        </div>
+        
+        <div class="g-form">
+          <p>Have you had any contact to others with these symptoms?</p>
+
+          <div class="special">
+
+            <label for="yes"><input type="radio" name="yes-or-no" value="yes" 
+                class="input-radio" id="yes"/>yes</label>
+
+          <label for="no"><input type="radio" name="yes-or-no" value="no"
+                class="input-radio" id="no"/>no</label>
+              </div>
+        </div>
+          
+        <div class="g-form"><p>If you experience any of the following symptoms, kindly describe in detail. When did you start experiencing it.</p>
+
+          <textarea
+            id="others"
+            class="unput-textarea"
+            name="others"
+            placeholder="Please state the details here"></textarea>
+        </div>
+
+
+        <button type="submit" id="submit">Submit</button>
+          </form>
+        </div>
+
+          <div class="right-bar"></div>
+      </div>
+               
+</body>
+</html>
